@@ -1,0 +1,90 @@
+---
+import NTFCard from '../components/NTFCard.astro'
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon-32x32.png' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main>
+      <NTFCard />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --clr-primary-100: hsl(215, 51%, 70%);
+    --clr-primary-200: hsl(178, 100%, 50%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(215, 32%, 27%);
+    --clr-neutral-300: hsl(216, 50%, 16%);
+    --clr-neutral-400: hsl(217, 54%, 11%);
+  }
+  @font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/Outfit-Light.ttf');
+    font-display: swap;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/Outfit-Regular.ttf');
+    font-display: swap;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/Outfit-SemiBold.ttf');
+    font-display: swap;
+    font-weight: 600;
+  }
+  * {
+    min-width: 0;
+    font: inherit;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  img,
+  video,
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  body {
+    min-height: 100dvh;
+    padding-inline: 1.5rem;
+    padding-block-start: 4rem;
+    margin: 0;
+    font-family: 'Outfit', Courier, monospace;
+    font-size: 18px;
+    background-color: var(--clr-neutral-400);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    text-wrap: balance;
+  }
+  p {
+    margin: 0;
+    text-wrap: pretty;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>

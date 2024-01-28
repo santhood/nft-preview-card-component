@@ -1,0 +1,130 @@
+---
+
+---
+
+<div class='card'>
+  <div class='card__div'>
+    <a href='#'>
+      <img src='/images/image-equilibrium.jpg' alt='' />
+    </a>
+  </div>
+
+  <div class='card__text'>
+    <h2><a href='#'>Equilibrium #3429</a></h2>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class='info'>
+      <p class='info__item info__item--money'>
+        <img src='/images/icon-ethereum.svg' alt='' /> 0.041 ETH
+      </p>
+      <p class='info__item info__item--date'>
+        <img src='/images/icon-clock.svg' alt='' /> 3 days left
+      </p>
+    </div>
+  </div>
+
+  <div class='card__profile'>
+    <picture class='card__profile-picture'>
+      <img src='/images/image-avatar.png' alt='' />
+    </picture>
+    <p>Creation of <a href='#'>Jules Wyvern</a></p>
+  </div>
+</div>
+
+<style>
+  .card {
+    max-width: 21.875rem;
+    padding: 1.5rem;
+    margin-inline: auto;
+    border-radius: 0.5rem;
+    background-color: var(--clr-neutral-300);
+  }
+  .card__div {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .card__div::before,
+  .card__div::after {
+    content: '';
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    inset: 0;
+  }
+  .card__div::before {
+    opacity: 0.5;
+    background-color: var(--clr-primary-200);
+  }
+  .card__div::after {
+    background-image: url('/images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .card__div:hover::before,
+  .card__div:hover::after {
+    visibility: visible;
+  }
+
+  .card__text {
+    padding-block: 1.5rem;
+    border-block-end: 1px solid var(--clr-primary-100);
+  }
+  .card__text > h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--clr-neutral-100);
+  }
+  .card__text > h2:hover {
+    color: var(--clr-primary-200);
+  }
+  .card__text > p {
+    margin-block: 0.875rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--clr-primary-100);
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .info__item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  .info__item--money {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--clr-primary-200);
+  }
+  .info__item--date {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--clr-primary-100);
+  }
+  .card__profile {
+    padding-block: 0.875rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .card__profile-picture {
+    width: 2rem;
+    border: 2px solid var(--clr-neutral-100);
+    border-radius: 9999px;
+    display: block;
+  }
+  .card__profile p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--clr-primary-100);
+  }
+  .card__profile a {
+    color: var(--clr-neutral-100);
+  }
+  .card__profile a:hover {
+    color: var(--clr-primary-200);
+  }
+</style>
